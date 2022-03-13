@@ -13,7 +13,7 @@ svg path {
 }
 
 svg path:onclick {
-	fill:blue;
+	fill:white;
 }
 .GBR2003:hover {
 fill: yellow;
