@@ -33,17 +33,20 @@ transition: 0.5s;
 		}
 
 
-			
+		.h1{
+			float:left;
+		}	
 
 		.topnav {
 				overflow: hidden;
-				background-color: #e9e9e9;
+				background-color: #202225;
+
 			  }
 			  
 			  .topnav a {
-				float: left;
+				float: right;
 				display: block;
-				color: black;
+				color: white;
 				text-align: center;
 				padding: 14px 16px;
 				text-decoration: none;
@@ -51,8 +54,8 @@ transition: 0.5s;
 			  }
 			  
 			  .topnav a:hover {
-				background-color: #ddd;
-				color: black;
+				background-color: #2196F3;
+				color: white;
 			  }
 			  
 			  .topnav a.active {
@@ -61,7 +64,7 @@ transition: 0.5s;
 			  }
 			  
 			  .topnav .search-container {
-				float: right;
+				float: left;
 			  }
 			  
 			  .topnav input[type=text] {
