@@ -1,3 +1,4 @@
+
 .map{
 	width:30%;
 }
@@ -33,14 +34,17 @@ transition: 0.5s;
 		}
 
 
-			}
-
+			
+		h {
+			font-family: 'Open Sans';font-size: 22px;
+		}
 		.topnav {
 				overflow: hidden;
 				background-color: #e9e9e9;
 			  }
 			  
 			  .topnav a {
+				font-family: 'Calibri';
 				float: left;
 				display: block;
 				color: black;
