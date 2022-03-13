@@ -8,7 +8,7 @@ const endpoint = (
 
     'filters=areaType=utla;areaName=East Dunbartonshire&' +
 
-    'structure={"date":"date","newCases":"newCasesByPublishDate"}'
+    'structure={    "date":"date","areaName":"areaName","areaCode":"areaCode","newCasesByPublishDate": "newCasesByPublishDate","cumCasesByPublishDate": "cumCasesByPublishDate","newDeaths28DaysByPublishDate": "newDeaths28DaysByPublishDate","cumDeaths28DaysByPublishDate": "cumDeaths28DaysByPublishDate"}'
 
 );
 
