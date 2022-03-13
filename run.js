@@ -6,7 +6,9 @@ const public = path.join(__dirname,'public');
 
 app.use(express.static(public));
 
-
+app.get('/', function(req, res)
+{ res.sendFile(path.join(public, 'home.html'));
+})
  
 app.get('/map', function(req, res)
 { res.sendFile(path.join(public, 'map.html'));
