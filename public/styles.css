@@ -1,5 +1,5 @@
-.map{
-	width:30%;
+.map {
+	width: 30%;
 }
 
 svg path:hover {
@@ -32,12 +32,9 @@ transition: 0.5s;
 			
 		}
 
-
-			
-
-		.topnav {
+		 /* .topnav {
 				overflow: hidden;
-				background-color: #e9e9e9;
+				background-color: #303030;
 			  }
 			  
 			  .topnav a {
@@ -58,6 +55,11 @@ transition: 0.5s;
 			  .topnav a.active {
 				background-color: #2196F3;
 				color: white;
+			  }
+
+			  .topnav h1 {
+				color: white;
+				padding-left: 50px;
 			  }
 			  
 			  .topnav .search-container {
@@ -101,11 +103,11 @@ transition: 0.5s;
 				.topnav input[type=text] {
 				  border: 1px solid #ccc;  
 				}
-			  }
+			  }*/
 
 
 			  .map{
-				width:30%;
+				width: 30%;
 			}
 			
 			svg path:hover {
