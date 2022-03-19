@@ -1,5 +1,86 @@
-.map {
-	width: 30%;
+html {
+	min-width: 800px;
+	overflow-y: hidden;
+}
+
+body {
+	background-color: lightgray;
+}
+
+.map-div {
+	border: 1px solid black;
+	background-color: white;
+	align-items: center;
+}
+
+.gradient {
+	background: rgb(0,255,0);
+	background: linear-gradient(90deg, rgba(0,255,0,1) 0%, rgba(255,191,0,1) 50%, rgba(255,0,0,1) 100%);
+}
+
+.divs-above-map {
+	border: 1px solid black;
+	margin-top: 1px;
+}
+
+.card {
+	border: 0px;
+}
+
+.card-header {
+	border-radius: 0px !important;
+}
+
+/* On screens that are 2560px wide or less*/
+@media screen and (max-width: 2560px) {
+	.map-div {
+		height: 27% !important;
+	}
+
+	svg {
+		height: 95% !important;
+	}
+}
+
+/* On screens that are 1920px wide or less*/
+@media screen and (max-width: 1920px) {
+	.map-div {
+		height: 21.25% !important;
+	}
+}
+
+/* On screens that are 1600px wide or less*/
+@media screen and (max-width: 1600px) {
+	.map-div {
+		height: 25.5% !important;
+	}
+}
+
+/* On screens that are 1366px wide or less*/
+@media screen and (max-width: 1366px) {
+	.map-div {
+		height: 30% !important;
+	}
+}
+
+/* On screens that are 1000px wide or less*/
+@media screen and (max-width: 1000px) {
+	.map-div {
+		height: 41.75% !important;
+	}
+	svg {
+		height: 75% !important;
+	}
+}
+
+/* On screens that are 800px wide or less*/
+@media screen and (max-width: 800px) {
+	.map-div {
+		height: 52.25% !important;
+	}
+	svg {
+		height: 57.5% !important;
+	}
 }
 
 svg path:hover {
