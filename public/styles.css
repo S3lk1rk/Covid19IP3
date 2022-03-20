@@ -1,818 +1,906 @@
-.map{
-	width:30%;
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+footer {
+  font-family: "Montserrat", sans-serif;
+  background-color: #202225;
+  color: #edf0f1;;
+  text-align: center;
+}
+
+.search {
+  width: 100%;
+  position: inherit;
+  display: inherit;
+}
+
+.searchTerm {
+  width: 700px;
+  padding: 5px;
+  height: 40px;
+  outline: none;
+  color: white;
+  background-color: #202225;
+  border-color: white;
+  border-left: none;
+  border-right: none;
+  border-top: none
+
+}
+
+.searchTerm:focus{
+  color: white
+}
+
+.searchButton {
+  width: 70px;
+  height: 40px;
+  background: #202225;;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  font-size: 10px;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+.map_container {
+  width: 300px;
+  border: 15px #202225;
+  padding: 50px;
+  margin: 20px;
+}
+
+li,
+a,
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+header {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px, 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #202225;
+}
+
+.nav_header {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: auto;
+}
+
+form {
+
+margin-right: auto;
+margin-left: auto;
+
+}
+
+.navbar_links {
+  
+  margin-right: 20px;
+  padding: 10px;
+}
+
+.navbar_links li {
+  margin: 5px;
+  padding: 10px;
+  display: flex;
+  align-items: left;
+  display: inline-block;
+}
+
+.logo {
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: auto;
+}
+
+.settingsicon {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.7s ease-in-out;
+}
+
+.settingsicon:hover {
+  transform: rotate(140deg);
+}
+
+.navbar_links li a {
+  color: #edf0f1;
+  transition: all 0.3s ease 0s;
+}
+
+.navbar_links li a:hover {
+  color: #0088a9;
+}
+
+.map {
+  width: 10%;
 }
 
 svg path:hover {
-	fill:#000000;
-	transition: 0.5s;
-	cursor: pointer;
+  fill: #000000;
+  transition: 0.5s;
+  cursor: pointer;
 }
 
 svg path {
-	fill:red;
+  fill: red;
 }
 
 svg path:onclick {
-	fill:blue;
+  fill: white;
 }
 .GBR2003:hover {
-fill: yellow;
-transition: 0.5s;
-	cursor: pointer;
-	
+  fill: yellow;
+  transition: 0.5s;
+  cursor: pointer;
 }
 
-[id = "GBR2003"] a {
-	fill: black;
-		
-	}
+[id="GBR2003"] a {
+  fill: black;
+}
 
-	GBR2003 a {
-		fill: black;
-			
-		}
+GBR2003 a {
+  fill: black;
+}
 
+.h1 {
+  float: left;
+}
 
-			
+.map {
+  width: 30%;
+}
 
-		.topnav {
-				overflow: hidden;
-				background-color: #e9e9e9;
-			  }
-			  
-			  .topnav a {
-				float: left;
-				display: block;
-				color: black;
-				text-align: center;
-				padding: 14px 16px;
-				text-decoration: none;
-				font-size: 17px;
-			  }
-			  
-			  .topnav a:hover {
-				background-color: #ddd;
-				color: black;
-			  }
-			  
-			  .topnav a.active {
-				background-color: #2196F3;
-				color: white;
-			  }
-			  
-			  .topnav .search-container {
-				float: right;
-			  }
-			  
-			  .topnav input[type=text] {
-				padding: 6px;
-				margin-top: 8px;
-				font-size: 17px;
-				border: none;
-			  }
-			  
-			  .topnav .search-container button {
-				float: right;
-				padding: 6px 10px;
-				margin-top: 8px;
-				margin-right: 16px;
-				background: #ddd;
-				font-size: 17px;
-				border: none;
-				cursor: pointer;
-			  }
-			  
-			  .topnav .search-container button:hover {
-				background: #ccc;
-			  }
-			  
-			  @media screen and (max-width: 600px) {
-				.topnav .search-container {
-				  float: none;
-				}
-				.topnav a, .topnav input[type=text], .topnav .search-container button {
-				  float: none;
-				  display: block;
-				  text-align: left;
-				  width: 100%;
-				  margin: 0;
-				  padding: 14px;
-				}
-				.topnav input[type=text] {
-				  border: 1px solid #ccc;  
-				}
-			  }
+svg path:hover {
+  fill: #000000;
+  transition: 0.5s;
+  cursor: pointer;
+}
 
+svg path {
+  fill: red;
+}
 
-			  .map{
-				width:30%;
-			}
-			
-			svg path:hover {
-				fill:#000000;
-				transition: 0.5s;
-				cursor: pointer;
-			}
-			
-			svg path {
-				fill:red;
-			}
-			
-			svg path:onclick {
-				fill:pink;
-			}
-			.GBR2003:hover {
-			fill: yellow;
-			transition: 0.5s;
-				cursor: pointer;
-				
-			}
-			
-			
-			
-			.num1{
-					fill: blue;
-							
-						}
-			.num2{
-					fill: blue;
-							
-						}
-			
-			.num3{
-					fill: blue;
-							
-						}
-			
-			.num4{	
-			fill: blue;
-					}
-					.num5{
-							fill: blue;
-									
-								}
-					
-					.num6{
-							fill: blue;
-									
-								}
-			
-								.num7{
-									fill: blue;
-											
-										}
-							.num8{
-									fill: blue;
-											
-										}
-							
-							.num9{
-									fill: blue;
-											
-										}
-			
-			
-			
-										.num10{
-											fill: blue;
-													
-												}
-									.num11{
-											fill: blue;
-													
-												}
-									
-									.num12{
-											fill: blue;
-													
-												}
-			
-												.num13{
-													fill: blue;
-															
-														}
-											.num14{
-													fill: blue;
-															
-														}
-											
-											.num15{
-													fill: blue;
-															
-														}
-														.num16{
-															fill: blue;
-																	
-																}
-													.num17{
-															fill: blue;
-																	
-																}
-													
-													.num18{
-															fill: blue;
-																	
-																}
-													
-													.num19{	
-													fill: blue;
-															}
-															.num20{
-																	fill: blue;
-																			
-																		}
-															
-															.num21{
-																	fill: blue;
-																			
-																		}
-													
-																		.num22{
-																			fill: blue;
-																					
-																				}
-																	.num23{
-																			fill: blue;
-																					
-																				}
-																	
-																	.num24{
-																			fill: blue;
-																					
-																				}
-													
-													
-													
-																				.num25{
-																					fill: blue;
-																							
-																						}
-																			.num26{
-																					fill: blue;
-																							
-																						}
-																			
-																			.num27{
-																					fill: red;
-																							
-																						}
-													
-																						.num28{
-																							fill: red;
-																									
-																								}
-																					.num29{
-																							fill: red;
-																									
-																								}
-																					
-																					.num30{
-																							fill: red;
-																									
-																								}
-			.num31 {
-				fill:red;
-			}
-			.num32 {
-				fill:red;
-			}
-			.num33 {
-				fill:red;
-			}.num34 {
-				fill:red;
-			}
-			.num35 {
-				fill:red;
-			}
-			.num36 {
-				fill:red;
-			}
-			.num37 {
-				fill:red;
-			}.num38 {
-				fill:red;
-			}
-			.num39 {
-				fill:red;
-			}
-			.num40 {
-				fill:red;
-			}
-			.num41 {
-				fill:red;
-			}.num42 {
-				fill:red;
-			}
-			.num43 {
-				fill:red;
-			}
-			.num44 {
-				fill:red;
-			}
-			.num45 {
-				fill:red;
-			}.num46 {
-				fill:red;
-			}
-			.num47 {
-				fill:red;
-			}
-			.num48 {
-				fill:red;
-			}
-			.num49 {
-				fill:red;
-			}.num50 {
-				fill:red;
-			}
-			.num51 {
-				fill:red;
-			}.num52 {
-				fill:red;
-			}
-			.num53 {
-				fill:red;
-			}
-			.num54 {
-				fill:red;
-			}
-			.num55 {
-				fill:red;
-			}.num56 {
-				fill:red;
-			}
-			.num57 {
-				fill:red;
-			}
-			.num58 {
-				fill:red;
-			}
-			.num59 {
-				fill:red;
-			}.num60 {
-				fill:red;
-			}
-			.num61 {
-				fill:red;
-			}.num62 {
-				fill:red;
-			}
-			.num63 {
-				fill:red;
-			}
-			.num64 {
-				fill:red;
-			}
-			.num65 {
-				fill:red;
-			}.num66 {
-				fill:red;
-			}
-			.num67 {
-				fill:red;
-			}
-			.num68 {
-				fill:red;
-			}
-			.num69 {
-				fill:red;
-			}.num70 {
-				fill:red;
-			}
-			.num71 {
-				fill:red;
-			}.num72 {
-				fill:red;
-			}
-			.num73 {
-				fill:red;
-			}
-			.num74 {
-				fill:red;
-			}
-			.num75 {
-				fill:red;
-			}.num76 {
-				fill:red;
-			}
-			.num77 {
-				fill:red;
-			}
-			.num78 {
-				fill:green;
-			}
-			.num79 {
-				fill:green;
-			}.num80 {
-				fill:green;
-			}
-			.num81 {
-				fill:green;
-			}.num82 {
-				fill:green;
-			}
-			.num83 {
-				fill:green;
-			}
-			.num84 {
-				fill:green;
-			}
-			.num85 {
-				fill:green;
-			}.num86 {
-				fill:green;
-			}
-			.num87 {
-				fill:green;
-			}
-			.num88 {
-				fill:green;
-			}
-			.num89 {
-				fill:green;
-			}.num90 {
-				fill:green;
-			}
-			.num91 {
-				fill:green;
-			}.num92 {
-				fill:green;
-			}
-			.num93 {
-				fill:green;
-			}
-			.num94 {
-				fill:green;
-			}
-			.num95 {
-				fill:green;
-			}.num96 {
-				fill:green;
-			}
-			.num97 {
-				fill:green;
-			}
-			.num98 {
-				fill:green;
-			}
-			.num99 {
-				fill:green;
-			}.num100 {
-				fill:pink;
-			}
-			.num101 {
-				fill:pink;
-			}.num102 {
-				fill:pink;
-			}
-			.num103 {
-				fill:red;
-			}
-			.num104 {
-				fill:red;
-			}
-			.num105 {
-				fill:pink;
-			}.num106 {
-				fill:pink;
-			}
-			.num107 {
-				fill:pink;
-			}
-			.num108 {
-				fill:pink;
-			}
-			.num109 {
-				fill:pink;
-			}.num110 {
-				fill:pink;
-			}
-			.num111 {
-				fill:pink;
-			}.num112 {
-				fill:pink;
-			}
-			.num113 {
-				fill:pink;
-			}
-			.num114 {
-				fill:red;
-			}
-			.num115 {
-				fill:red;
-			}.num116 {
-				fill:red;
-			}
-			.num117 {
-				fill:red;
-			}
-			.num118 {
-				fill:red;
-			}
-			.num119 {
-				fill:pink;
-			}.num120 {
-				fill:pink;
-			}
-			.num121 {
-				fill:pink;
-			}.num122 {
-				fill:pink;
-			}
-			.num123 {
-				fill:pink;
-			}
-			.num124 {
-				fill:pink;
-			}
-			.num125 {
-				fill:pink;
-			}.num126 {
-				fill:pink;
-			}
-			.num127 {
-				fill:pink;
-			}
-			.num128 {
-				fill:pink;
-			}
-			.num129 {
-				fill:green;
-			}.num130 {
-				fill:green;
-			}
-			.num131 {
-				fill:green;
-			}.num132 {
-				fill:blue;
-			}
-			.num133 {
-				fill:red;
-			}
-			.num134 {
-				fill:red;
-			}
-			.num135 {
-				fill:red;
-			}.num136 {
-				fill:red;
-			}
-			.num137 {
-				fill:red;
-			}
-			.num138 {
-				fill:red;
-			}
-			.num139 {
-				fill:red;
-			}.num140 {
-				fill:red;
-			}
-			.num141 {
-				fill:red;
-			}.num142 {
-				fill:red;
-			}
-			.num143 {
-				fill:red;
-			}
-			.num144 {
-				fill:red;
-			}
-			.num145 {
-				fill:red;
-			}.num146 {
-				fill:blue;
-			}
-			.num147 {
-				fill:blue;
-			}
-			.num148 {
-				fill:blue;
-			}
-			.num149 {
-				fill:blue;
-			}.num150 {
-				fill:red;
-			}
-			.num151 {
-				fill:red;
-			}.num152 {
-				fill:red;
-			}
-			.num153 {
-				fill:red;
-			}
-			.num154 {
-				fill:red;
-			}
-			.num155 {
-				fill:red;
-			}.num156 {
-				fill:red;
-			}
-			.num157 {
-				fill:red;
-			}
-			.num158 {
-				fill:red;
-			}
-			.num159 {
-				fill:red;
-			}.num160 {
-				fill:red;
-			}
-			.num161 {
-				fill:red;
-			}.num162 {
-				fill:red;
-			}
-			.num163 {
-				fill:red;
-			}
-			.num164 {
-				fill:red;
-			}
-			.num165 {
-				fill:red;
-			}.num166 {
-				fill:red;
-			}
-			.num167 {
-				fill:red;
-			}
-			.num168 {
-				fill:red;
-			}
-			.num169 {
-				fill:red;
-			}.num170 {
-				fill:red;
-			}
-			.num171 {
-				fill:red;
-			}.num172 {
-				fill:red;
-			}
-			.num173 {
-				fill:red;
-			}
-			.num174 {
-				fill:blue;
-			}
-			.num175 {
-				fill:green;
-			}.num176 {
-				fill:red;
-			}
-			.num177 {
-				fill:red;
-			}
-			.num178 {
-				fill:red;
-			}
-			.num179 {
-				fill:red;
-			}.num180 {
-				fill:red;
-			}
-			.num181 {
-				fill:red;
-			}.num182 {
-				fill:red;
-			}
-			.num183 {
-				fill:red;
-			}
-			.num184 {
-				fill:red;
-			}
-			.num185 {
-				fill:red;
-			}.num186 {
-				fill:red;
-			}
-			.num187 {
-				fill:red;
-			}
-			.num188 {
-				fill:red;
-			}
-			.num189 {
-				fill:red;
-			}.num190 {
-				fill:red;
-			}
-			.num191 {
-				fill:red;
-			}.num192 {
-				fill:red;
-			}
-			.num193 {
-				fill:red;
-			}
-			.num194 {
-				fill:red;
-			}
-			.num195 {
-				fill:red;
-			}.num196 {
-				fill:red;
-			}
-			.num197 {
-				fill:red;
-			}
-			.num198 {
-				fill:red;
-			}
-			.num199 {
-				fill:red;
-			}.num200 {
-				fill:red;
-			}
-			.num201 {
-				fill:red;
-			}.num202 {
-				fill:red;
-			}
-			.num203 {
-				fill:red;
-			}
-			.num204 {
-				fill:red;
-			}
-			.num205 {
-				fill:red;
-			}.num206 {
-				fill:red;
-			}
-			.num207 {
-				fill:red;
-			}
-			.num208 {
-				fill:red;
-			}
-			.num209 {
-				fill:red;
-			}.num210 {
-				fill:red;
-			}
-			.num211 {
-				fill:red;
-			}.num212 {
-				fill:red;
-			}
-			.num213 {
-				fill:red;
-			}
-			.num214 {
-				fill:red;
-			}
-			.num215 {
-				fill:red;
-			}.num216 {
-				fill:red;
-			}
-			.num217 {
-				fill:red;
-			}
-			.num218 {
-				fill:red;
-			}
-			.num219 {
-				fill:red;
-			}.num220 {
-				fill:red;
-			}
-			.num221 {
-				fill:red;
-			}.num222 {
-				fill:red;
-			}
-			.num223 {
-				fill:red;
-			}
-			.num224 {
-				fill:red;
-			}
-			.num225 {
-				fill:red;
-			}.num226 {
-				fill:red;
-			}
-			.num227 {
-				fill:red;
-			}
-			.num228 {
-				fill:red;
-			}
-			.num229 {
-				fill:red;
-			}.num230 {
-				fill:red;
-			}
-			.num231 {
-				fill:red;
-			}.num232 {
-				fill:red;
-			}
+svg path:onclick {
+  fill: pink;
+}
+.GBR2003:hover {
+  fill: yellow;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.num1 {
+  fill: blue;
+}
+.num2 {
+  fill: blue;
+}
+
+.num3 {
+  fill: blue;
+}
+
+.num4 {
+  fill: blue;
+}
+.num5 {
+  fill: blue;
+}
+
+.num6 {
+  fill: blue;
+}
+
+.num7 {
+  fill: blue;
+}
+.num8 {
+  fill: blue;
+}
+
+.num9 {
+  fill: blue;
+}
+
+.num10 {
+  fill: blue;
+}
+.num11 {
+  fill: blue;
+}
+
+.num12 {
+  fill: blue;
+}
+
+.num13 {
+  fill: blue;
+}
+.num14 {
+  fill: blue;
+}
+
+.num15 {
+  fill: blue;
+}
+.num16 {
+  fill: blue;
+}
+.num17 {
+  fill: blue;
+}
+
+.num18 {
+  fill: blue;
+}
+
+.num19 {
+  fill: blue;
+}
+.num20 {
+  fill: blue;
+}
+
+.num21 {
+  fill: blue;
+}
+
+.num22 {
+  fill: blue;
+}
+.num23 {
+  fill: blue;
+}
+
+.num24 {
+  fill: blue;
+}
+
+.num25 {
+  fill: blue;
+}
+.num26 {
+  fill: blue;
+}
+
+.num27 {
+  fill: red;
+}
+
+.num28 {
+  fill: red;
+}
+.num29 {
+  fill: red;
+}
+
+.num30 {
+  fill: red;
+}
+.num31 {
+  fill: red;
+}
+.num32 {
+  fill: red;
+}
+.num33 {
+  fill: red;
+}
+.num34 {
+  fill: red;
+}
+.num35 {
+  fill: red;
+}
+.num36 {
+  fill: red;
+}
+.num37 {
+  fill: red;
+}
+.num38 {
+  fill: red;
+}
+.num39 {
+  fill: red;
+}
+.num40 {
+  fill: red;
+}
+.num41 {
+  fill: red;
+}
+.num42 {
+  fill: red;
+}
+.num43 {
+  fill: red;
+}
+.num44 {
+  fill: red;
+}
+.num45 {
+  fill: red;
+}
+.num46 {
+  fill: red;
+}
+.num47 {
+  fill: red;
+}
+.num48 {
+  fill: red;
+}
+.num49 {
+  fill: red;
+}
+.num50 {
+  fill: red;
+}
+.num51 {
+  fill: red;
+}
+.num52 {
+  fill: red;
+}
+.num53 {
+  fill: red;
+}
+.num54 {
+  fill: red;
+}
+.num55 {
+  fill: red;
+}
+.num56 {
+  fill: red;
+}
+.num57 {
+  fill: red;
+}
+.num58 {
+  fill: red;
+}
+.num59 {
+  fill: red;
+}
+.num60 {
+  fill: red;
+}
+.num61 {
+  fill: red;
+}
+.num62 {
+  fill: red;
+}
+.num63 {
+  fill: red;
+}
+.num64 {
+  fill: red;
+}
+.num65 {
+  fill: red;
+}
+.num66 {
+  fill: red;
+}
+.num67 {
+  fill: red;
+}
+.num68 {
+  fill: red;
+}
+.num69 {
+  fill: red;
+}
+.num70 {
+  fill: red;
+}
+.num71 {
+  fill: red;
+}
+.num72 {
+  fill: red;
+}
+.num73 {
+  fill: red;
+}
+.num74 {
+  fill: red;
+}
+.num75 {
+  fill: red;
+}
+.num76 {
+  fill: red;
+}
+.num77 {
+  fill: red;
+}
+.num78 {
+  fill: green;
+}
+.num79 {
+  fill: green;
+}
+.num80 {
+  fill: green;
+}
+.num81 {
+  fill: green;
+}
+.num82 {
+  fill: green;
+}
+.num83 {
+  fill: green;
+}
+.num84 {
+  fill: green;
+}
+.num85 {
+  fill: green;
+}
+.num86 {
+  fill: green;
+}
+.num87 {
+  fill: green;
+}
+.num88 {
+  fill: green;
+}
+.num89 {
+  fill: green;
+}
+.num90 {
+  fill: green;
+}
+.num91 {
+  fill: green;
+}
+.num92 {
+  fill: green;
+}
+.num93 {
+  fill: green;
+}
+.num94 {
+  fill: green;
+}
+.num95 {
+  fill: green;
+}
+.num96 {
+  fill: green;
+}
+.num97 {
+  fill: green;
+}
+.num98 {
+  fill: green;
+}
+.num99 {
+  fill: green;
+}
+.num100 {
+  fill: pink;
+}
+.num101 {
+  fill: pink;
+}
+.num102 {
+  fill: pink;
+}
+.num103 {
+  fill: red;
+}
+.num104 {
+  fill: red;
+}
+.num105 {
+  fill: pink;
+}
+.num106 {
+  fill: pink;
+}
+.num107 {
+  fill: pink;
+}
+.num108 {
+  fill: pink;
+}
+.num109 {
+  fill: pink;
+}
+.num110 {
+  fill: pink;
+}
+.num111 {
+  fill: pink;
+}
+.num112 {
+  fill: pink;
+}
+.num113 {
+  fill: pink;
+}
+.num114 {
+  fill: red;
+}
+.num115 {
+  fill: red;
+}
+.num116 {
+  fill: red;
+}
+.num117 {
+  fill: red;
+}
+.num118 {
+  fill: red;
+}
+.num119 {
+  fill: pink;
+}
+.num120 {
+  fill: pink;
+}
+.num121 {
+  fill: pink;
+}
+.num122 {
+  fill: pink;
+}
+.num123 {
+  fill: pink;
+}
+.num124 {
+  fill: pink;
+}
+.num125 {
+  fill: pink;
+}
+.num126 {
+  fill: pink;
+}
+.num127 {
+  fill: pink;
+}
+.num128 {
+  fill: pink;
+}
+.num129 {
+  fill: green;
+}
+.num130 {
+  fill: green;
+}
+.num131 {
+  fill: green;
+}
+.num132 {
+  fill: blue;
+}
+.num133 {
+  fill: red;
+}
+.num134 {
+  fill: red;
+}
+.num135 {
+  fill: red;
+}
+.num136 {
+  fill: red;
+}
+.num137 {
+  fill: red;
+}
+.num138 {
+  fill: red;
+}
+.num139 {
+  fill: red;
+}
+.num140 {
+  fill: red;
+}
+.num141 {
+  fill: red;
+}
+.num142 {
+  fill: red;
+}
+.num143 {
+  fill: red;
+}
+.num144 {
+  fill: red;
+}
+.num145 {
+  fill: red;
+}
+.num146 {
+  fill: blue;
+}
+.num147 {
+  fill: blue;
+}
+.num148 {
+  fill: blue;
+}
+.num149 {
+  fill: blue;
+}
+.num150 {
+  fill: red;
+}
+.num151 {
+  fill: red;
+}
+.num152 {
+  fill: red;
+}
+.num153 {
+  fill: red;
+}
+.num154 {
+  fill: red;
+}
+.num155 {
+  fill: red;
+}
+.num156 {
+  fill: red;
+}
+.num157 {
+  fill: red;
+}
+.num158 {
+  fill: red;
+}
+.num159 {
+  fill: red;
+}
+.num160 {
+  fill: red;
+}
+.num161 {
+  fill: red;
+}
+.num162 {
+  fill: red;
+}
+.num163 {
+  fill: red;
+}
+.num164 {
+  fill: red;
+}
+.num165 {
+  fill: red;
+}
+.num166 {
+  fill: red;
+}
+.num167 {
+  fill: red;
+}
+.num168 {
+  fill: red;
+}
+.num169 {
+  fill: red;
+}
+.num170 {
+  fill: red;
+}
+.num171 {
+  fill: red;
+}
+.num172 {
+  fill: red;
+}
+.num173 {
+  fill: red;
+}
+.num174 {
+  fill: blue;
+}
+.num175 {
+  fill: green;
+}
+.num176 {
+  fill: red;
+}
+.num177 {
+  fill: red;
+}
+.num178 {
+  fill: red;
+}
+.num179 {
+  fill: red;
+}
+.num180 {
+  fill: red;
+}
+.num181 {
+  fill: red;
+}
+.num182 {
+  fill: red;
+}
+.num183 {
+  fill: red;
+}
+.num184 {
+  fill: red;
+}
+.num185 {
+  fill: red;
+}
+.num186 {
+  fill: red;
+}
+.num187 {
+  fill: red;
+}
+.num188 {
+  fill: red;
+}
+.num189 {
+  fill: red;
+}
+.num190 {
+  fill: red;
+}
+.num191 {
+  fill: red;
+}
+.num192 {
+  fill: red;
+}
+.num193 {
+  fill: red;
+}
+.num194 {
+  fill: red;
+}
+.num195 {
+  fill: red;
+}
+.num196 {
+  fill: red;
+}
+.num197 {
+  fill: red;
+}
+.num198 {
+  fill: red;
+}
+.num199 {
+  fill: red;
+}
+.num200 {
+  fill: red;
+}
+.num201 {
+  fill: red;
+}
+.num202 {
+  fill: red;
+}
+.num203 {
+  fill: red;
+}
+.num204 {
+  fill: red;
+}
+.num205 {
+  fill: red;
+}
+.num206 {
+  fill: red;
+}
+.num207 {
+  fill: red;
+}
+.num208 {
+  fill: red;
+}
+.num209 {
+  fill: red;
+}
+.num210 {
+  fill: red;
+}
+.num211 {
+  fill: red;
+}
+.num212 {
+  fill: red;
+}
+.num213 {
+  fill: red;
+}
+.num214 {
+  fill: red;
+}
+.num215 {
+  fill: red;
+}
+.num216 {
+  fill: red;
+}
+.num217 {
+  fill: red;
+}
+.num218 {
+  fill: red;
+}
+.num219 {
+  fill: red;
+}
+.num220 {
+  fill: red;
+}
+.num221 {
+  fill: red;
+}
+.num222 {
+  fill: red;
+}
+.num223 {
+  fill: red;
+}
+.num224 {
+  fill: red;
+}
+.num225 {
+  fill: red;
+}
+.num226 {
+  fill: red;
+}
+.num227 {
+  fill: red;
+}
+.num228 {
+  fill: red;
+}
+.num229 {
+  fill: red;
+}
+.num230 {
+  fill: red;
+}
+.num231 {
+  fill: red;
+}
+.num232 {
+  fill: red;
+}
