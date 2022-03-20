@@ -51,6 +51,10 @@ footer {
 
 }
 
+iframe {
+
+  border-color: #202225;
+}
 
 .map_container {
   width: 300px;
