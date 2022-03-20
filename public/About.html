@@ -45,19 +45,27 @@
 
     <body>
       <h1 id="welcome">API interactions</h1>
-<p>Enter a county name to the text box and press submit</p>
-<input type="text" class="ST" placeholder="Enter County Name...">
+        <p>Enter a county name to the text box and press submit</p>
+          <input type="text" class="ST" placeholder="Enter County Name...">
            <button type="submit" class="SB">Submit</button>
-<p>Online HTML, CSS and JavaScript editor 
-with instant preview.</p>
+        <p>Online HTML, CSS and JavaScript editor with instant preview.</p>
+        
       <div class="map_container">
-        
-        
-  
-    
-      
       </div>
-     
+      <button onclick="showContent()">Show hidden content</button>
+
+      <template>
+        <h2>Flower</h2>
+        <img src="img_white_flower.jpg" width="214" height="204">
+      </template>
+      
+      <script>
+          function showContent() {
+          var temp = document.getElementsByTagName("template")[0];
+          var clon = temp.content.cloneNode(true);
+          document.body.appendChild(clon);
+        }
+      </script>
     </body>
 
     <footer>--FOOTER SECTION--</footer>
