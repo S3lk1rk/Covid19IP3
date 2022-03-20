@@ -1,151 +1,195 @@
-.map{
-	width:30%;
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+footer {
+  font-family: "Montserrat", sans-serif;
+  background-color: #202225;
+  color: #edf0f1;;
+  text-align: center;
+}
+
+.search {
+  width: 100%;
+  position: inherit;
+  display: inherit;
+}
+
+.searchTerm {
+  width: 700px;
+  padding: 5px;
+  height: 40px;
+  outline: none;
+  color: white;
+  background-color: #202225;
+  border-color: white;
+  border-left: none;
+  border-right: none;
+  border-top: none
+
+}
+
+.searchTerm:focus{
+  color: white
+}
+
+.searchButton {
+  width: 70px;
+  height: 40px;
+  background-color: #202225;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  font-size: 10px;
+  font-family: "Montserrat", sans-serif;
+  border-style: none;
+
+}
+
+
+.map_container {
+  width: 300px;
+  border: 15px #202225;
+  padding: 50px;
+  margin: 20px;
+}
+
+li,
+a,
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+header {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px, 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #202225;
+}
+
+.nav_header {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: auto;
+}
+
+form {
+
+margin-right: auto;
+margin-left: auto;
+
+}
+
+.navbar_links {
+  
+  margin-right: 20px;
+  padding: 10px;
+}
+
+.navbar_links li {
+  margin: 5px;
+  padding: 10px;
+  display: flex;
+  align-items: left;
+  display: inline-block;
+}
+
+.logo {
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: auto;
+}
+
+.settingsicon {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.7s ease-in-out;
+}
+
+.settingsicon:hover {
+  transform: rotate(140deg);
+}
+
+.navbar_links li a {
+  color: #edf0f1;
+  transition: all 0.3s ease 0s;
+}
+
+.navbar_links li a:hover {
+  color: #0088a9;
+}
+
+.map {
+  width: 5%;
 }
 
 svg path:hover {
-	fill:#000000;
-	transition: 0.5s;
-	cursor: pointer;
+  fill: #000000;
+  transition: 0.5s;
+  cursor: pointer;
 }
 
 svg path {
-	fill:red;
+  fill: red;
 }
-path:focus {
-	fill: pink;
-	stroke: red;
-	stroke-width: 1;
-  }
-  svg:focus {
-	fill: pink;
-	stroke: red;
-	stroke-width: 1;
-  }
-.on {
-	fill: pink;
-	stroke: purple;
-	stroke-width: 2;
-  }
 
 svg path:onclick {
-	fill:white;
+  fill: white;
 }
 .GBR2003:hover {
-fill: yellow;
-transition: 0.5s;
-	cursor: pointer;
-	
+  fill: yellow;
+  transition: 0.5s;
+  cursor: pointer;
 }
 
-[id = "GBR2003"] a {
-	fill: black;
-		
-	}
+[id="GBR2003"] a {
+  fill: black;
+}
 
-	GBR2003 a {
-		fill: black;
-			
-		}
+GBR2003 a {
+  fill: black;
+}
 
+.h1 {
+  float: left;
+}
 
-		.h1{
-			float:left;
-		}	
+.map {
+  width: 10%;
+}
 
-		.topnav {
-				overflow: hidden;
-				background-color: #202225;
+svg path:hover {
+  fill: #000000;
+  transition: 0.5s;
+  cursor: pointer;
+}
 
-			  }
-			  
-			  .topnav a {
-				float: right;
-				display: block;
-				color: white;
-				text-align: center;
-				padding: 14px 16px;
-				text-decoration: none;
-				font-size: 17px;
-			  }
-			  
-			  .topnav a:hover {
-				background-color: #2196F3;
-				color: white;
-			  }
-			  
-			  .topnav a.active {
-				background-color: #2196F3;
-				color: white;
-			  }
-			  
-			  .topnav .search-container {
-				float: left;
-			  }
-			  
-			  .topnav input[type=text] {
-				padding: 6px;
-				margin-top: 8px;
-				font-size: 17px;
-				border: none;
-			  }
-			  
-			  .topnav .search-container button {
-				float: right;
-				padding: 6px 10px;
-				margin-top: 8px;
-				margin-right: 16px;
-				background: #ddd;
-				font-size: 17px;
-				border: none;
-				cursor: pointer;
-			  }
-			  
-			  .topnav .search-container button:hover {
-				background: #ccc;
-			  }
-			  
-			  @media screen and (max-width: 600px) {
-				.topnav .search-container {
-				  float: none;
-				}
-				.topnav a, .topnav input[type=text], .topnav .search-container button {
-				  float: none;
-				  display: block;
-				  text-align: left;
-				  width: 100%;
-				  margin: 0;
-				  padding: 14px;
-				}
-				.topnav input[type=text] {
-				  border: 1px solid #ccc;  
-				}
-			  }
+svg path {
+  fill: red;
+}
 
-
-			  .map{
-				width:30%;
-			}
-			
-			svg path:hover {
-				fill:#000000;
-				transition: 0.5s;
-				cursor: pointer;
-			}
-			
-			svg path {
-				fill:red;
-			}
-			
-			svg path:onclick {
-				fill:pink;
-			}
-			.GBR2003:hover {
-			fill: yellow;
-			transition: 0.5s;
-				cursor: pointer;
-				
-			}
-			
+svg path:onclick {
+  fill: pink;
+}
+.GBR2003:hover {
+  fill: yellow;
+  transition: 0.5s;
+  cursor: pointer;
+}
 			
 			
 			.num1{
