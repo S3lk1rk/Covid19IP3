@@ -41,13 +41,14 @@ footer {
 .searchButton {
   width: 70px;
   height: 40px;
-  background: #202225;;
+  background-color: #202225;
   text-align: center;
   color: white;
   cursor: pointer;
   font-size: 10px;
-  border: none;
   font-family: "Montserrat", sans-serif;
+  border-style: none;
+
 }
 
 
@@ -133,7 +134,7 @@ margin-left: auto;
 }
 
 .map {
-  width: 10%;
+  width: 5%;
 }
 
 svg path:hover {
@@ -168,7 +169,7 @@ GBR2003 a {
 }
 
 .map {
-  width: 30%;
+  width: 10%;
 }
 
 svg path:hover {
