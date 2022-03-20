@@ -11,6 +11,21 @@ svg path:hover {
 svg path {
 	fill:red;
 }
+path:focus {
+	fill: pink;
+	stroke: red;
+	stroke-width: 1;
+  }
+  svg:focus {
+	fill: pink;
+	stroke: red;
+	stroke-width: 1;
+  }
+.on {
+	fill: pink;
+	stroke: purple;
+	stroke-width: 2;
+  }
 
 svg path:onclick {
 	fill:white;
