@@ -67,8 +67,9 @@ function apicall() {
         const results = await getPaginatedData(filters, structure);
         console.log(`Length: ${results.length}`)
         console.log('Data (first 7 items):', results.slice(0, 7));
+        var Dumbo = results.slice(0, 7)
         let Poutine = document.querySelector("p1");
-        var jerry = JSON.stringify(results) 
+        var jerry = JSON.stringify(Dumbo) 
         Poutine.innerText = x +"health data is shown as "+ jerry;
     };  // main
     
