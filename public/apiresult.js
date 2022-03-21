@@ -3,7 +3,7 @@
 
 function apicall() {
   
-  var x = document.getElementById("myText").value;
+  var x = document.getElementById("searchtext").value;
 
 
 

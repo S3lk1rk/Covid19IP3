@@ -4,7 +4,7 @@
   <html lang="en">
     <head>
 
-      
+      <script src="apiresult.js"></script>
       <script src="county.js"></script>
       <link rel="stylesheet" href="styles.css" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -21,8 +21,8 @@
       <form action="/action_page.php">
 
           <div class="search">
-             <input type="text" class="searchTerm" placeholder="Enter County Name...">
-             <button type="submit" class="searchButton">Submit</button>
+             <input type="text" id="searchtext" class="searchTerm" placeholder="Enter County Name...">
+             <button onclick="apicall()" type="submit" class="searchButton" >Submit</button>
        </div>
       </form>
 
