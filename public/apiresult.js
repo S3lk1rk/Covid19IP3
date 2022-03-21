@@ -69,8 +69,9 @@ function apicall() {
         console.log('Data (first 7 items):', results.slice(0, 7));
         var Dumbo = results.slice(0, 7)
         let Poutine = document.querySelector("p1");
+        var Doc = Dumbo.values("date")
         var jerry = JSON.stringify(Dumbo) 
-        Poutine.innerText = x +"health data is shown as "+ jerry;
+        Poutine.innerText = x +"    health data is shown as "+ jerry;
     };  // main
     
     main().catch(err => {
