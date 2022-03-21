@@ -68,7 +68,8 @@ function apicall() {
         console.log(`Length: ${results.length}`)
         console.log('Data (first 7 items):', results.slice(0, 7));
         let Poutine = document.querySelector("p1");
-        Poutine.innerText = "My message"+ results.slice(0, 7);
+        var jerry = JSON.stringify(results) 
+        Poutine.innerText = x +"health data is shown as "+ jerry;
     };  // main
     
     main().catch(err => {
