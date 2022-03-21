@@ -4,8 +4,8 @@
   <html lang="en">
     <head>
 
-      
-      <script src="county.js"></script>
+      <script src="apiresult.js"></script>
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
       <link rel="stylesheet" href="styles.css" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta charset="utf-8" />
@@ -46,8 +46,8 @@
     <body>
       <h1 id="welcome">API interactions</h1>
         <p>Enter a county name to the text box and press submit</p>
-          <input type="text" class="ST" placeholder="Enter County Name...">
-           <button type="submit" class="SB">Submit</button>
+        <input type="text" id="myText" value="Some text...">
+           <button type="submit" class="SB" onclick="apicall()">Submit</button>
         <p>Online HTML, CSS and JavaScript editor with instant preview.</p>
         
       <div class="map_container">

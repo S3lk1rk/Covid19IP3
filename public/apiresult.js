@@ -1,4 +1,11 @@
-const axios = require("axios");
+
+
+
+function apicall() {
+  
+  var x = document.getElementById("myText").value;
+
+
 
 
 
@@ -6,7 +13,7 @@ const endpoint = (
 
     'https://api.coronavirus.data.gov.uk/v1/data?' +
 
-    'filters=areaType=utla;areaName=East Dunbartonshire&' +
+    'filters=areaType=utla;areaName=' + x +'&' +
 
     'structure={    "date":"date","areaName":"areaName","areaCode":"areaCode","newCasesByPublishDate": "newCasesByPublishDate","cumCasesByPublishDate": "cumCasesByPublishDate","newDeaths28DaysByPublishDate": "newDeaths28DaysByPublishDate","cumDeaths28DaysByPublishDate": "cumDeaths28DaysByPublishDate"}'
 
@@ -53,4 +60,4 @@ main().catch(err => {
 
 });
 
-
+}
