@@ -1,7 +1,7 @@
 
 function storeVar(area) {
     var county = area.getAttribute('value');
-    document.getElementById("searchbar").value = county;
+    document.getElementById("searchtext").value = county;
     console.log(county);
   } 
 
