@@ -1,35 +1,75 @@
-"use strict";
-// This selects the form from the html
-let form = document.getElementById("inputform");
-// This adds an event listener
-form.addEventListener("submit", apicall);
 
 
-//This function refreshes the page on a button click
-function refreshPage(){
-    if(confirm("Clear results?")){
-      location.reload();
-    }				
-  }
+
+function apicall() {
   
-function apicall(evt) {
-    evt.preventDefault();
-    
-    // obtains the two halves of the url
-    let JobTitle = document.getElementById("JobTitle").value;
-    let baseUrlJobTitle = "http://api.lmiforall.org.uk/api/v1/soc/search?q=";
-    // sanitizes the JobTitle
-    JobTitle = JobTitle.toLowerCase();
-    // removes special characters
-    JobTitle = encodeURI(JobTitle);
-    //This creates the url that will be used later to access the api by adding the entered query to the url below
-    let jobURL = baseUrlJobTitle + JobTitle;
-    let JobsURL = "http://api.lmiforall.org.uk/api/v1/ashe/estimatePay?soc=";
-    
-    //This creates a json form from the ReturnedValue to the query that we will operate on to display the values of title, description and tasks
-    fetch(jobURL)
-      .then((ReturnedValue) => ReturnedValue.json())
-      .then((SavedJSON) => {
-        console.log(SavedJSON);
-        displayJobs(SavedJSON);
-      });
+
+
+
+
+  /**
+   * Extracts paginated data by requesting all of the pages
+   * and combining the results.
+   * @param filters { Array<string> }
+   *          API filters. See the API documentations for additional
+   *          information.
+   * @param structure { Object<string, any> }
+   *          Structure parameter. See the API documentations for
+   *          additional information.
+   * @returns {Promise<Array<any>>}
+   *          Comprehensive list of dictionaries containing all the data for
+   *          the given ``filters`` and ``structure``.
+   */
+  
+  const getPaginatedData = async ( filters, structure ) => {
+      const
+          endpoint = 'https://api.coronavirus.data.gov.uk/v1/data',
+          apiParams = {
+              filters: filters.join(";"),
+              structure: JSON.stringify(structure)
+          },
+          result = [];
+      let
+          nextPage = null,
+          currentPage = 1;
+      do {
+          const { data, status, statusText } = await axios.get(endpoint, {
+              params: {
+                  ...apiParams,
+                  page: currentPage
+              },
+              timeout: 10000
+          });
+          if ( status >= 400 )
+              throw Error(statusText);
+          if ( "pagination" in data )
+              nextPage = data.pagination.next || null;
+          result.push(...data.data);  
+          currentPage ++;
+      } while ( nextPage );
+      return result;
+  };  // getData
+
+  const main = async () => {
+      const
+          filters = [
+              `areaType=region`,
+          ],
+          structure = {
+              date: "date",
+              name: "areaName",  
+              code: "areaCode",
+              new: "newCasesBySpecimenDate",    
+              cumulative: "cumCasesBySpecimenDate"
+          };
+      const results = await getPaginatedData(filters, structure);
+      console.log(`Length: ${results.length}`)
+      console.log('Data (first 7 items):', results.slice(0, 7));
+  };  // main
+  
+  main().catch(err => {
+      console.error(err);
+      process.exitCode = 1;
+  });
+
+}
