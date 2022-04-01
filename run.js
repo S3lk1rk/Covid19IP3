@@ -7,11 +7,19 @@ const public = path.join(__dirname,'public');
 app.use(express.static(public));
 
 app.get('/', function(req, res)
-{ res.sendFile(path.join(public, 'home.html'));
+{ res.sendFile(path.join(public, 'map.html'));
 })
  
 app.get('/map', function(req, res)
 { res.sendFile(path.join(public, 'map.html'));
+})
+
+app.get('/about', function(req, res)
+{ res.sendFile(path.join(public, 'about.html'));
+})
+
+app.get('/contact', function(req, res)
+{ res.sendFile(path.join(public, 'contact.html'));
 })
 
 
