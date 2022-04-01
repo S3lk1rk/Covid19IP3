@@ -1,181 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <!-- CSS-Bootstrap -->
-      <link rel="stylesheet" href="bootstrap.css" />
-      <link rel="stylesheet" href="mapstyling.css" />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <meta charset="utf-8" />
-      <title>Tracker</title>
-      <link rel="icon" type="image/x-icon" href="/images/gun.jpg" />
-    </head>
+<!DOCTYPE html>
+<html lang="en">
 
-    <body>
-      <!-- NAVBAR -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-navblack">
-        <div class="container-fluid">
-          <a class="navbar-brand ms-5" href="/">
-            <h2><img src="media/logo.svg"></h2>
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <p class="navbar-toggler-icon"></p>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <form action="/action_page.php" class="form-group ms-auto">
-              <input
-                class="form-control"
-                type="name"
-                placeholder="Enter County Name.."
-                name="search"
-              />
-            </form>
-            <ul class="navbar-nav ms-auto mb-1 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="/map.html">Map</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="/contact.html">Contact</a>
-              </li>
-              <li class="nav-item">
-                <img
-                  class="settingsicon"
-                  src="media/settings.svg"
-                  alt="settings logo"
-                />
-                <a
-                  href="javascript:void(0);"
-                  class="icon"
-                  onclick="myFunction()"
-                >
-                  <i class="fa fa-bars"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <!-- EOF NAVBAR -->
+<head>
+  <!-- CSS-Bootstrap -->
+  <link rel="stylesheet" href="bootstrap.css" />
+  <link rel="stylesheet" href="mapstyling.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" />
+  <title>Tracker</title>
+  <link rel="icon" type="image/x-icon" href="/images/gun.jpg" />
+</head>
 
-      <!-- MAIN CONTAINER -->
-      <div class="container-fluid my-3">
-        <div class="row">
-          <!-- LEFT COLUMN -->
-          <div class="col-9 mw-75">
-            <!-- ELEMENTS ABOVE MAP -->
-            <div class="row d-flex justify-content-between">
-              <div class="col-4 position-relative mb-5">
-                <!-- div class="bg-dark text-white d-flex justify-content-center w-25 mb-lg-0 p py-2 px-5 m-lg-0 m-lg- position-absolute lead fw-bold rounded-top divs-above-map">
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-navblack">
+    <div class="container-fluid">
+      <a class="navbar-brand ms-5" href="/">
+        <h2><img src="media/logo.svg"></h2>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <p class="navbar-toggler-icon"></p>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form action="/action_page.php" class="form-group ms-auto">
+          <input class="form-control" type="name" placeholder="Enter County Name.." name="search" />
+        </form>
+        <ul class="navbar-nav ms-auto mb-1 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/map.html">Map</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="/contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <img class="settingsicon" src="media/settings.svg" alt="settings logo" />
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- EOF NAVBAR -->
+
+  <!-- MAIN CONTAINER -->
+  <div class="container-fluid my-3">
+    <div class="row">
+      <!-- LEFT COLUMN -->
+      <div class="col-8 mw-65">
+        <!-- ELEMENTS ABOVE MAP -->
+        <div class="row d-flex justify-content-between">
+          <div class="col-4 position-relative mb-5">
+            <!-- div class="bg-dark text-white d-flex justify-content-center w-25 mb-lg-0 p py-2 px-5 m-lg-0 m-lg- position-absolute lead fw-bold rounded-top divs-above-map">
               <div>UK</div>
             </div -->
-              </div>
-
-              <div
-                class="col-6 position-relative mb-5"
-                style="margin-right: 24px"
-              >
-                <div
-                  class="gradient d-flex justify-content-between w-100 px-2 position-absolute lead fw-bold rounded-top divs-above-map"
-                ></div>
-              </div>
-              <!-- EOF ELEMENTS ABOVE MAP -->
-            </div>
-
-            <!-- MAP -->
-            <div class="map-container">
-              <iframe
-                class="map"
-                src="mapcomponent.html"
-                title="Map Component"
-              ></iframe>
-            </div>
-            <!-- EOF MAP -->
           </div>
-          <!-- EOF LEFT COLUMN -->
 
-          <!-- RIGHT COLUMN -->
-
-          <div
-            class="leftcard mt-5"
-            style="border: 1px solid white-space: inherit;; --bs-gutter-x: 0px !important; margin: auto;"
-          >
-            <div class="card">
-              <div class="card-header bg-dark text-white">County Name</div>
-              <div class="card-body bg-light">
-                <p class="card-text">Sample text</p>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-header bg-dark text-white">New cases</div>
-              <div class="card-body bg-light">
-                <p class="card-text">Sample text</p>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-header bg-dark text-white">Current cases</div>
-              <div class="card-body bg-light">
-                <p class="card-text">Sample text</p>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-header bg-dark text-white">Total cases</div>
-              <div class="card-body bg-light">
-                <p class="card-text">Sample text</p>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-header bg-dark text-white">Deaths</div>
-              <div class="card-body bg-light">
-                <p class="card-text">Sample text</p>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-header bg-dark text-white">
-                1st Dose Vaccines
-              </div>
-              <div class="card-body bg-light">
-                <p class="card-text">Sample text</p>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-header bg-dark text-white">
-                2nd Dose Vaccines
-              </div>
-              <div class="card-body bg-light">
-                <p class="card-text">Sample text</p>
-              </div>
+          <div class="col-6 position-relative mb-5" style="margin-right: 24px">
+            <div
+              class="gradient d-flex justify-content-between w-100 px-2 position-absolute lead fw-bold rounded-top divs-above-map">
             </div>
           </div>
-          <!-- EOF RIGHT COLUMN -->
+          <!-- EOF ELEMENTS ABOVE MAP -->
+        </div>
+
+        <!-- MAP -->
+        <iframe class="map" src="mapcomponent.html" title="Map Component"></iframe>
+        <!-- EOF MAP -->
+      </div>
+      <!-- EOF LEFT COLUMN -->
+
+      <!-- RIGHT COLUMN -->
+
+      <div class="leftcard">
+        <div class="card">
+          <div class="card-header bg-dark text-white">County Name</div>
+          <div class="card-body bg-light">
+            <p class="card-text">Sample text</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header bg-dark text-white">New cases</div>
+          <div class="card-body bg-light">
+            <p class="card-text">Sample text</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header bg-dark text-white">Current cases</div>
+          <div class="card-body bg-light">
+            <p class="card-text">Sample text</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header bg-dark text-white">Total cases</div>
+          <div class="card-body bg-light">
+            <p class="card-text">Sample text</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header bg-dark text-white">Deaths</div>
+          <div class="card-body bg-light">
+            <p class="card-text">Sample text</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header bg-dark text-white">
+            1st Dose Vaccines
+          </div>
+          <div class="card-body bg-light">
+            <p class="card-text">Sample text</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header bg-dark text-white">
+            2nd Dose Vaccines
+          </div>
+          <div class="card-body bg-light">
+            <p class="card-text">Sample text</p>
+          </div>
         </div>
       </div>
+      <!-- EOF RIGHT COLUMN -->
+    </div>
+  </div>
 
-      <!-- EOF MAIN CONTAINER -->
+  <!-- EOF MAIN CONTAINER -->
 
-      <!-- Bootstrap bundle -->
-      <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"
-      ></script>
-    </body>
-  </html>
+  <!-- Bootstrap bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
+
 </html>
