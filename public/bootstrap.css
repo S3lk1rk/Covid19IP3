@@ -567,9 +567,9 @@ progress {
 .container-xl,
 .container-xxl {
   width: 100%;
-  padding-right: var(--bs-gutter-x, 0.75rem);
-  padding-left: var(--bs-gutter-x, 0.75rem);
-  margin-right: auto;
+
+
+
   margin-left: auto;
 }
 @media (min-width: 576px) {
@@ -618,7 +618,7 @@ progress {
   display: flex;
   flex-wrap: wrap;
   margin-top: calc(-1 * var(--bs-gutter-y));
-  margin-right: calc(-0.5 * var(--bs-gutter-x));
+ 
   margin-left: calc(-0.5 * var(--bs-gutter-x));
 }
 .row > * {
@@ -3814,6 +3814,7 @@ fieldset:disabled .btn {
 }
 .navbar {
   position: relative;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -4279,7 +4280,8 @@ fieldset:disabled .btn {
 }
 .navbar-dark .navbar-toggler {
   color: rgba(255, 255, 255, 0.55);
-  border-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.1); 
+  margin-right: 1rem;
 }
 .navbar-dark .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
@@ -9911,15 +9913,13 @@ iframe {
 }
 
 .leftcard {
-  width: 20rem;
+  width: 20.5rem;
   min-width: 5rem;
   border-radius: 0.5rem;
-  margin-right: 2%rem;
-  margin-left: 2%;
+  margin-left: 6%;
+
   margin-top: 3rem;
   margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
-
-
 }
