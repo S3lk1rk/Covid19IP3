@@ -735,8 +735,7 @@
     slider.oninput = function () {
         console.log(`${this.value / 7.5}`);
         default_value.innerHTML = `${this.value}` + `%`;
-        map.style.transform = `scale(${this.value / 100}) translate(${this.value / 50
-            }%, ${this.value / 8.25}%)`;
+        map.style.transform = `scale(${this.value / 100}) translate(${this.value / 50}%, ${this.value / 8.25}%)`;
 
         if (`${this.value}` == 100) {
             map.style.transform = `translate(0%, 0%)`;

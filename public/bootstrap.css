@@ -9918,8 +9918,26 @@ iframe {
   border-radius: 0.5rem;
   margin-left: 6%;
 
-  margin-top: 3rem;
+  margin-top: 4%;
   margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
+}
+
+
+.maincontainer {
+  justify-content: center;
+  margin-top: 2%;
+  margin-left: 5%;
+  width: 60%;
+  height: 60rem;
+}
+
+.mapcontainer {
+  justify-content: center;
+  overflow: scroll;
+  width: 100%;
+  height: 65%;
+  border: #202225 solid 2px;
+
 }
