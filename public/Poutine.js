@@ -8,7 +8,7 @@ function storeVar(area) {
   
   
   var x = document.getElementById("searchbar").value;
-
+  
     /**
      * Extracts paginated data by requesting all of the pages
      * and combining the results.
