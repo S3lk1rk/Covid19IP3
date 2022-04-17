@@ -71,7 +71,18 @@ function apicall() {
         let Poutine = document.querySelector("p1");
         var Doc = Dumbo.values("date")
         var jerry = JSON.stringify(Dumbo) 
-        Poutine.innerText = x +"    health data is shown as "+ jerry;
+
+        console.log(Dumbo[0].date);
+        console.log(Dumbo[0].name);
+        console.log(Dumbo[0].code);
+        console.log(Dumbo[0].new);
+        console.log(Dumbo[0].cumulative);
+
+        document.getElementById("date").innerHTML = JSON.stringify(Dumbo[0].date);
+        document.getElementById("name").innerHTML = JSON.stringify(Dumbo[0].name);
+        document.getElementById("code").innerHTML = JSON.stringify(Dumbo[0].code);
+        document.getElementById("new").innerHTML = JSON.stringify(Dumbo[0].new);
+        document.getElementById("cumulative").innerHTML = JSON.stringify(Dumbo[0].cumulative);
     };  // main
     
     main().catch(err => {
