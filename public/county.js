@@ -68,12 +68,12 @@ var x = document.getElementById("searchbar").value;
       console.log(`Length: ${results.length}`)
       console.log('Data (first 7 items):', results.slice(0, 7));
       var sliceinfo = results.slice(0, 1)
-      var sliceInfodos = structure.slice(0, 1)
+      
       let paragraphvariable = document.querySelector("p1");
-      var last7daysinfoinstringformdos = JSON.stringify(sliceInfodos)
+      
       var last7daysinfoinstringform = JSON.stringify(sliceinfo) 
       paragraphvariable.innerText = x +"    health data is shown as "+ last7daysinfoinstringform;
-      paragraphvariable.innerText = x +"    health data is shown as "+ last7daysinfoinstringformdos;
+      
   };  // main
 
   main().catch(err => {
