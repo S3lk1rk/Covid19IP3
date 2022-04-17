@@ -5,7 +5,7 @@
     <head>
 
       <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-      <script src="county.js"></script>
+      <script src="wad1api.js"></script>
       <link rel="stylesheet" href="styles.css" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta charset="utf-8" />
@@ -51,6 +51,15 @@
         New: <span class="newCasesBySpecimenDate"></span>
         Cumulative: <span class="cumCasesBySpecimenDate"></span>
       </P1>
+
+      <form id="inputform">
+        <label for="job">Job</label><br />
+        <input id="job" type="text" />
+        
+        <input type="submit" value="Submit job">
+      <button onclick= "history.go(0);" > Clear page</button>
+      </form>
+
       <template>
         <div class="Jobs">
             <span class="Jobs_header"></span>
