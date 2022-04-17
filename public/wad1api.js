@@ -14,7 +14,7 @@ function apicall(evt) {
 
   // get job type
   let job = document.getElementById("job").value;
-  let baseUrljob = "https://api.coronavirus.data.gov.uk/v1/data";
+  let baseUrljob = "https://api.coronavirus.data.gov.uk/v1/data?filters=areaType=utla;areaName=" ;
 
   
   // sanitizes the entered job
