@@ -73,12 +73,23 @@ var x = document.getElementById("searchbar").value;
       
       var last7daysinfoinstringform = JSON.stringify(sliceinfo) 
       paragraphvariable.innerText = x +"    health data is shown as "+ last7daysinfoinstringform;
-      
+     
+     // Object.assign(document.querySelector('paragraphvariable.innerText').style, {
+       // position: 'fixed',
+        //top: 0,
+       // right: 0,
+        //bottom: 0,
+        //left: 0,
+        //background: 'blue'
+    //})
   };  // main
 
   main().catch(err => {
       console.error(err);
       process.exitCode = 1;
+
+      
   });
 
 }
+
