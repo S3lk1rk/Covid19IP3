@@ -18,7 +18,6 @@ function apicall(evt) {
 
   
   // sanitizes the entered job
-  job = job.toLowerCase();
   // encodes the URL to remove special characters
   // https://www.w3schools.com/jsref/jsref_encodeuri.asp
   //URL is encoded
