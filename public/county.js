@@ -72,8 +72,20 @@ var x = document.getElementById("searchbar").value;
       let paragraphvariable = document.querySelector("p1");
       
       var last7daysinfoinstringform = JSON.stringify(sliceinfo) 
-      paragraphvariable.innerText = x +"    health data is shown as "+ last7daysinfoinstringform;
-     
+      console.log(sliceinfo[0].date);
+      console.log(sliceinfo[0].name);
+      console.log(sliceinfo[0].code);
+      console.log(sliceinfo[0].new);
+      console.log(sliceinfo[0].cumulative);
+
+
+
+      document.getElementById("date").innerHTML = (sliceinfo[0].date);
+      document.getElementById("name").innerHTML = (sliceinfo[0].name);
+      document.getElementById("code").innerHTML = (sliceinfo[0].code);
+      document.getElementById("new").innerHTML = (sliceinfo[0].new);
+      document.getElementById("cumulative").innerHTML = (sliceinfo[0].cumulative);
+
      // Object.assign(document.querySelector('paragraphvariable.innerText').style, {
        // position: 'fixed',
         //top: 0,
