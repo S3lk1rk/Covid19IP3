@@ -58,11 +58,13 @@ var x = document.getElementById("searchbar").value;
               `areaType=utla;areaName=` + x +'&',
           ],
           structure = {
-              date: "date",
-              name: "areaName",  
-              Vaccinated: "cumPeopleVaccinatedBoosterDoseByPublishDate",
-              new: "newCasesBySpecimenDate",    
-              cumulative: "cumCasesBySpecimenDate"
+              Date: "date",
+              Name: "areaName",  
+              Vaccinated: "cumPeopleVaccinatedFirstDoseByPublishDate",
+              Vaccinatedtot: "cumPeopleVaccinatedSecondDoseByPublishDate",
+              New: "newCasesBySpecimenDate",    
+              Cumulative: "cumCasesBySpecimenDate",
+              Deaths: "cumDeaths28DaysByDeathDate"
           };
       const results = await getPaginatedData(filters, structure);
       console.log(`Length: ${results.length}`)
@@ -72,19 +74,23 @@ var x = document.getElementById("searchbar").value;
       let paragraphvariable = document.querySelector("p1");
       
       var last7daysinfoinstringform = JSON.stringify(sliceinfo) 
-      console.log(sliceinfo[0].date);
-      console.log(sliceinfo[0].name);
+      console.log(sliceinfo[0].Date);
+      console.log(sliceinfo[0].Name);
       console.log(sliceinfo[0].Vaccinated);
-      console.log(sliceinfo[0].new);
-      console.log(sliceinfo[0].cumulative);
+      console.log(sliceinfo[0].Vaccinatedtot);
+      console.log(sliceinfo[0].New);   
+      console.log(sliceinfo[0].Cumulative);
+      console.log(sliceinfo[0].Deaths);
 
 
 
-      document.getElementById("date").innerHTML = (sliceinfo[0].date);
-      document.getElementById("name").innerHTML = (sliceinfo[0].name);
-      document.getElementById("code").innerHTML = (sliceinfo[0].Vaccinated);
-      document.getElementById("new").innerHTML = (sliceinfo[0].new);
-      document.getElementById("cumulative").innerHTML = (sliceinfo[0].cumulative);
+      document.getElementById("date").innerHTML = (sliceinfo[0].Date);
+      document.getElementById("name").innerHTML = (sliceinfo[0].Name);
+      document.getElementById("vaccinated").innerHTML = (sliceinfo[0].Vaccinated);
+      document.getElementById("vaccinatedtot").innerHTML = (sliceinfo[0].Vaccinatedtot);
+      document.getElementById("new").innerHTML = (sliceinfo[0].New);   
+      document.getElementById("cumulative").innerHTML = (sliceinfo[0].Cumulative);
+      document.getElementById("deaths").innerHTML = (sliceinfo[0].Deaths);
 
      // Object.assign(document.querySelector('paragraphvariable.innerText').style, {
        // position: 'fixed',
