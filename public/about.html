@@ -7,6 +7,7 @@
   <!-- CSS-Bootstrap -->
   <link rel="stylesheet" href="bootstrap.css">
   <link rel="stylesheet" href="mapstyling.css">
+  <script src="county.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="utf-8" />
   <title>Tracker</title>
@@ -33,15 +34,17 @@
           <li class="nav-item">
             <a class="nav-link" href="/map.html">Map</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link " href="/contact.html">Contact</a>
-          </li>
-          <li class="nav-item">
-            <img class="settingsicon" src="media/settings.svg" alt="settings logo" />
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <i class="fa fa-bars"></i>
+                  
+        <li class="nav-item">
+          <div class="dropdown">
+            <a id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              <img class="settingsicon" src="media/settings.svg" alt="settings logo" />
             </a>
-          </li>
+            <ul class="dropdown-menu settingsmenu" aria-labelledby="dropdownMenuButton1">
+              <li><a id="darkMode" onclick="darkModeAbout()" class="dropdown-item" >Dark Mode</a></li>
+            </ul>
+          </div>
+        </li>
         </ul>
       </div>
     </div>
@@ -49,26 +52,129 @@
   <!-- EOF NAVBAR -->
 
   <!-- MAIN CONTAINER -->
-  <div class="container-fluid my-3">
+  <div class="container-fluid my-5">
+
     <div class="row">
+
       <!-- LEFT COLUMN -->
-      <div class="col-8 mw-65">         
+      <div class="aboutcontainer">
+        <!-- ELEMENTS ABOVE MAP -->
+        <div class="row justify-content-between">
+
+
+          <div class="col-6 position-relative" style="margin-right: 24px">
+
+          </div>
+          <!-- EOF ELEMENTS ABOVE MAP -->
+        </div>
+
+        <!-- MAP -->
+        <div class=" col-11 justify-content-center">
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="165" height="27" viewBox="0 0 165 27">
+            <text id="Covid_Monitor" data-name="Covid Monitor" fill="Black" font-size="22"
+              font-family="Montserrat-Bold, Montserrat" font-weight="700">
+              <tspan x="0" y="21">Covid Monitor</tspan>
+            </text>
+          </svg>
+          <p></p>
+          <p>Data Visualization Application created for the Integrated Project 3 Module</p>
+        </div>
+
+        <!-- EOF MAP -->
+      </div>
+      <!-- EOF LEFT COLUMN -->
+
+      <!-- RIGHT COLUMN -->
+
+
+
+      <div class="contactform">
+
+        <h2 class="h1-responsive font-weight-bold my-4">Contact us</h2>
+        <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+          <!--Grid row-->
+          <div class="row">
+
+            <!--Grid column-->
+            <div class="">
+              <div class="md-form">
+                <label for="name" class="">Your name</label>
+                <input type="text" id="name" name="name" class="form-control">
+
+              </div>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="">
+              <div class="md-form mb-0">
+                <label for="email" class="">Your email</label>
+                <input type="text" id="email" name="email" class="form-control">
+
+              </div>
+            </div>
+            <!--Grid column-->
+
+          </div>
+          <!--Grid row-->
+
+          <!--Grid row-->
+          <div class="row">
+            <div class="">
+              <div class="md-form mb-0">
+                <label for="subject" class="">Subject</label>
+                <input type="text" id="subject" name="subject" class="form-control">
+
+              </div>
+            </div>
+          </div>
+          <!--Grid row-->
+
+          <!--Grid column-->
+
+
+          <div class="md-form">
+            <label for="message">Your message</label>
+            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+
+          </div>
+          <p></p>
+          <a class="btn btn-primary" onclick="contactForm(name, email, subject, message)">Send</a>
+
+          <div class="status"></div>
+      </div>
+
+      <!-- EOF RIGHT COLUMN -->
+    </div>
+  </div>
+  <div class="container-fluid my-3">
+
+    <div class="row">
+
     </div>
   </div>
 
   <!-- EOF MAIN CONTAINER -->
 
+  </div>
+</body>
 
-  <!-- FOOTER -->
-  <footer class="footer bg-navblack p-2 text-white text-xl-center fixed-bottom">
-    <p>Footer</p>
-  </footer>
-  <!-- EOF FOOTER -->
 
-  <!-- Bootstrap bundle -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
+
+<!--Grid column-->
+
+
+<!-- FOOTER -->
+<footer class="footer bg-navblack p-2 text-white text-xl-center fixed-bottom">
+  <img src="media/logo.svg" style="width: 6%;height: 6%;margin: 10px;">
+</footer>
+<!-- EOF FOOTER -->
+
+<!-- Bootstrap bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
 </html>
